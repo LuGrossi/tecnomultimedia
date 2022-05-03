@@ -1,0 +1,21 @@
+int miValorEntero;
+string nombre; 
+float miPosicion;
+
+Void Setup (){
+background (80, 75, 28); 
+println ("LuLa"); 
+MiValorEntero = 100; 
+nombre = "LuLa";
+miPosicion = random(50,80); 
+}
+
+Void Draw (){
+background (80, 75, 28); 
+
+miPosicion = random(50,80);
+
+text(nombre, width-frameCount, miValorEntero); 
+fill(miPosicion);
+rect(width-frameCount, miValorEntero, miValorEntero, 50); 
+}
